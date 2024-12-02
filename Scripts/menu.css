@@ -5,7 +5,12 @@
     font-family: sans-serif;
 }
 body{
+    width: 100%;
     background-color: black;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 a {
     text-decoration: none;
@@ -16,6 +21,8 @@ header{
     background: linear-gradient(0.20turn,   #1d1d28 , #000000);
     display: flex;
     font-size: 25px;
+    position: fixed;
+    top: 0%;
     
 }
 .nav{
@@ -49,4 +56,28 @@ header{
     cursor: pointer;
     box-shadow: 1px 0px 19px 1px #83ff18;
     transition: .6s;
+}
+menu{
+    width: 80%;
+    height: 1000px;
+    background-color: rgb(192, 189, 189);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+menu img{
+    width: 300px;
+    border-radius: 100px;
+    animation-name: animacao;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes animacao{
+
+    0% {width: 300px; box-shadow: 1px 1px 10px 10px rgb(255, 255, 255);}
+    30% {width: 250px; box-shadow: 1px 1px 10px 10px rgb(255, 0, 0);}
+    60% {width: 500px; box-shadow: 1px 1px 100px 30px rgb(0, 255, 0);}
+    100% {width: 300px; box-shadow: 1px 1px 10px 10px rgb(0, 0, 255);}
+
 }
