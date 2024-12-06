@@ -1,0 +1,135 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    overflow: auto;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    background: linear-gradient(0.20turn,   #080a07 , #131b12);
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+}
+header{
+    height: 80px;
+    width: 100%;
+    background: linear-gradient(0.20turn,   #080a07 , #131b12);
+    display: flex;
+    font-size: 25px;
+    position: fixed;
+    top: 0%;
+    
+}
+.nav{
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+}
+.nav a{
+    color: #83ff18;
+}
+.nav a:hover{
+        border-radius: 10px;
+        cursor: pointer;
+        transform: scale(1.35);
+        transition: .6s;
+}
+.logo{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    
+
+}
+.logo a img{
+    width: 70px;
+    border-radius: 90px;
+    margin: 0px 20px;
+}
+.logo a img:hover{
+    cursor: pointer;
+    box-shadow: 1px 0px 19px 1px #83ff18;
+    transition: .6s;
+}
+menu{
+    width: 80%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card{
+    width: 80%;
+    height: 600px;
+    border-radius: 20px;
+    background-color: rgb(23, 29, 23);
+    display: flex;
+    flex-direction: row;
+}
+.devphoto{
+    width: 80%;
+    border-radius: 50%;
+    margin: 20px;
+    animation-name: animacao;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.about{
+    height: 75%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.about h1{
+    color: white;
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    background: linear-gradient(to right, #00ff2a, #1ca72e, #08cde7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about a img{
+    width: 30px;
+    height: 30px;
+    
+}
+.text{
+    width: 75%;
+    height: 100%;
+    display: flex;
+}
+.links{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.text p{
+    color: white;
+    font-size: 25px;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@keyframes animacao{
+
+    0% {box-shadow: 5px 0px 10px 1px rgb(0, 255, 0);}
+    25% {box-shadow: 0px 5px 10px 1px rgb(255, 255, 0);}
+    50% {box-shadow: -5px 0px 10px 1px rgb(255, 255, 255);}
+    75% {box-shadow: 0px -5px 10px 1px rgb(0, 255, 255);}
+    100% {box-shadow: 5px 0px 10px 1px rgb(0, 255, 0);}
+
+}
