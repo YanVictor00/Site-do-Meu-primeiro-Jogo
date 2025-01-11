@@ -117,6 +117,11 @@ menu{
     flex-direction: row;
     justify-content: space-around;
 }
+.links img:hover{
+    cursor: pointer;
+    transform: scale(0.8);
+    transition: .2s;
+}
 .text p{
     color: white;
     font-size: 25px;
